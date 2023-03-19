@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  direction: ltr;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+body {
+  background-color: hsl(257deg, 40%, 49%);
+  background-size: auto 100%;
+  background-image: url(./images/bg-desktop.svg);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 72px;
+}
+body header {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+body header img {
+  height: 53px;
+}
+body main {
+  align-self: center;
+  margin: auto 0px;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+}
+@media screen and (max-width: 760px) {
+  body main {
+    flex-direction: column;
+  }
+}
+body main .imgbox {
+  width: 55%;
+}
+@media screen and (max-width: 760px) {
+  body main .imgbox {
+    width: 100%;
+  }
+}
+body main .textbox {
+  width: 45%;
+  padding: 50px;
+  color: white;
+}
+body main .textbox h1 {
+  font-weight: 600;
+  font-size: clamp(0px, 2.77777vw, 40px);
+}
+@media screen and (max-width: 760px) {
+  body main .textbox h1 {
+    text-align: center;
+    font-size: 24px;
+    font-size: clamp(0px, 5.6470588235vw, 24px);
+    width: 100%;
+  }
+}
+body main .textbox p {
+  margin: 24px 0px;
+  font-weight: 400;
+  font-size: clamp(0px, 1.111111vw, 16px);
+}
+@media screen and (max-width: 760px) {
+  body main .textbox p {
+    text-align: center;
+    font-size: 16px;
+    font-size: clamp(0px, 3.7647058824vw, 16px);
+  }
+}
+body main .textbox button {
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  outline: none;
+  background-color: white;
+  height: 50px;
+  padding: 0px 60px;
+  border-radius: 25px;
+  color: hsl(257deg, 40%, 49%);
+  box-shadow: 5px 5px 5px hsl(258deg, 38%, 37%);
+}
+body main .textbox button:active {
+  background-color: hsl(300deg, 69%, 71%);
+  color: white;
+}
+@media screen and (max-width: 760px) {
+  body main .textbox {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+}
+body footer {
+  position: absolute;
+  bottom: 40px;
+  left: -72px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+body footer span {
+  cursor: pointer;
+  color: white;
+  height: 100%;
+  width: auto;
+  border-radius: 50%;
+  border: white 2px solid;
+  margin-left: 16px;
+}
+body footer span:active {
+  color: hsl(300deg, 69%, 71%);
+  border: hsl(300deg, 69%, 71%) 2px solid;
+}
+@media screen and (max-width: 760px) {
+  body footer {
+    margin: 15px 0px;
+    position: static;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 760px) {
+  body {
+    padding: 40px 10%;
+    background-image: url(./images/bg-mobile.svg);
+  }
+}
